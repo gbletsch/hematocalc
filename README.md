@@ -1,4 +1,36 @@
-# Getting Started with Create React App
+# Hemato-calc
+
+## Methods to calcule body surface area
+
+### Dubois
+
+A = w ** 0.425 \* h ** 0.725 \* C
+
+A being the surface area in square centimeters,
+H the height in centimeters,
+W the weight in kilograms and
+C the constant,71.84.
+
+TODO: Revisar as unidades
+TODO: Revisar essa constante
+https://www.msdmanuals.com/medical-calculators/BodySurfaceArea-pt.htm
+
+DuBois D, DuBois E.F. "A formula to estimate the approximate surface area if height and weight be known." Arch. Intern. Med. 17:862, 1916
+DOI: 10.1001/archinte.1916.00080130010002
+
+https://scihubtw.tw/10.1001/archinte.1916.00080130010002
+
+### Mosteller, square root method
+
+Área = Raiz quadrada(Altura \* Peso / 3600)
+
+https://medicalsuite.einstein.br/Servicos/Paginas/calculadora-bodySurfaceArea.aspx
+
+TODO: Achar o artigo
+
+TODO: Comparar as técnicas
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +99,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
