@@ -16,18 +16,22 @@ function Home() {
 
   const handleBSAOptions = (e) => {
     const option = e.target.value;
+    let tempBsa = 0;
 
     switch (option) {
       case DUBOIS:
-        setBsa(calculateBSADubois(height, weight));
+        tempBsa = calculateBSADubois(height, weight);
         break;
       case MOSTELLER:
-        setBsa(calculateBSAMosteller(height, weight));
+        tempBsa = calculateBSAMosteller(height, weight);
         break;
       default:
         setBsa(0);
         break;
     }
+
+    if (tempBsa > 2) tempBsa = 2;
+    setBsa(tempBsa);
   };
 
   return (
