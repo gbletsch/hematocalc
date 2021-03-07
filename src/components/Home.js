@@ -6,21 +6,9 @@ function Home() {
 
   const [weight, setWeight] = useState(0);
 
-  //   const handleWeightChange = () =>
-  //   const handleChange = (e) => {
-  //     console.log(
-  //       "🚀 ~ file: AddPatientData.js ~ line 8 ~ handleChange ~ e",
-  //       e.target.name,
-  //       e.target.value
-  //     );
-  //     const tempData = patientData;
-  //     tempData[e.target.name] = e.target.value;
-  //     setPatientData(tempData);
-  //   };
-
   return (
     <div className="Home__container">
-      <h1 className="Home__title">Adicionar dados do paciente:</h1>
+      <h2 className="Home__h2">Adicionar dados do paciente:</h2>
       <form className="Home__basic__form">
         <label htmlFor="weight" className="Home__label">
           Peso (kg):

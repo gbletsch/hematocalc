@@ -30,6 +30,61 @@ TODO: Achar o artigo
 
 TODO: Comparar as técnicas
 
+## Protocols
+
+### CVP
+
+1.  Nome - CVP (Ciclofosfamida, Vincristina, Prednisona)
+2.  Indicações principais: Linfoma não Hodgkin baixo grau.
+3.  Regime
+
+    | Ordem infusão | Medicamento / dose / velocidade infusão                         | D1  | D2  | D3  | D4  | D5  |
+    | :-----------: | --------------------------------------------------------------- | :-: | :-: | :-: | :-: | :-: |
+    |       1       | Vincristina 1,2-1,4 mg/m<sup>2</sup> Ev lento (dose max.: 2 mg) |  Х  |     |     |     |     |
+    |       2       | Ciclofosfamida 750 - 1000mg/m<sup>2</sup> Ev 1 hora             |  X  |     |     |     |     |
+    |       3       | Prednisona 100mg/dia VO                                         |  X  |  X  |  X  |  X  |  X  |
+
+4.  Freqüência: a cada 21 dias, 6 ou 8 ciclos
+5.  Pré-medicação: ondansetrona 8mg 1amp pré-QT
+6.  Potencial emetogêncio: MODERADO (30 - 90%)
+7.  Medicamentos de suporte:
+
+    - alopurinol 300mg/dia para prevenção de síndrome da lise tumoral
+    - omeprazol 20mg/dia
+
+8.  Ajuste de dose
+
+    ***
+
+    **a. Função renal**
+
+    | Clearance creatinina (mL/min) |        Vincristina        | Ciclofosfamida  |
+    | :---------------------------: | :-----------------------: | :-------------: |
+    |            30 - 50            | Não requer ajuste de dose |      100%       |
+    |            10 - 30            | Não requer ajuste de dose |    50 - 75%     |
+    |             < 10              | Não requer ajuste de dose | 50 % ou omissão |
+
+    ***
+
+    **b. Função hepática**
+
+    | Bilirrubinas                             | Vincristina | Ciclofosfamida |
+    | ---------------------------------------- | ----------- | -------------- |
+    | Aumento de 1-2 vezes limite superior     | 50%         | 100%           |
+    | Aumento de 2-4 vezes limite superior     | 25%         | Atenção        |
+    | Aumento maior de 4 vezes limite superior | omitir      | Atenção        |
+
+    ***
+
+    **c. Toxicidade hematológica e não-hematológica:**
+
+    | Toxicidade                                                                    | Vincristina                                                     | Ciclofosfamida                      |
+    | ----------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------- |
+    | Toxicidade hematológica grau 4 >= 7 dias,</br>neutropenia febril, sangramento | 100%                                                            | 75% ou filgrastima (em neutropenia) |
+    | Toxicidade não hematológica grau 3                                            | 100%                                                            | 75%                                 |
+    | Toxicidade orgânica grau 4                                                    | descontinuar                                                    | descontinuar                        |
+    | Neurotoxicidade                                                               | **Leve**: 67%</br>**Moderada**: Aguardar recuperação, reiniciar | 100%                                |
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

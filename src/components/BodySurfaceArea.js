@@ -8,6 +8,8 @@ const calculateBSAMosteller = (h, w) => {
   return ((h * w) / 3600) ** 0.5;
 };
 
+// TODO: colocar as referências dos cálculos de BSA
+
 function BodySurfaceArea({ height, weight }) {
   return (
     <div className="bsa__container">
