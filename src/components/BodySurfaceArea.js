@@ -1,14 +1,8 @@
 import React from "react";
-
-const calculateBSADubois = (h, w) => {
-  return (w ** 0.425 * h ** 0.725 * 71.84) / 10 ** 4;
-};
-
-const calculateBSAMosteller = (h, w) => {
-  return ((h * w) / 3600) ** 0.5;
-};
-
-// TODO: colocar as referências dos cálculos de BSA
+import {
+  calculateBSADubois,
+  calculateBSAMosteller,
+} from "../utils/bsa-formulae";
 
 function BodySurfaceArea({ height, weight }) {
   return (
