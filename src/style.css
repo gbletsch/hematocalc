@@ -5,6 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.app__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: auto;
+}
+
 .home__container {
   display: flex;
   flex-direction: column;
@@ -26,15 +34,15 @@
   padding: 2px;
 }
 
+.home__select {
+  width: 100%;
+}
+
 .home__input {
   padding: 10px;
   border: 0;
   border-radius: 10px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-}
-
-.home__select {
-  width: 80%;
 }
 
 .cvp__container {
