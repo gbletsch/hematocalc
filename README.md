@@ -9,7 +9,7 @@ A = w ** 0.425 \* h ** 0.725 \* C
 A being the surface area in square centimeters,
 H the height in centimeters,
 W the weight in kilograms and
-C the constant,71.84.
+C the constant, 71.84.
 
 TODO: Revisar as unidades
 TODO: Revisar essa constante
