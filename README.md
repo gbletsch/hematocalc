@@ -11,8 +11,9 @@ H the height in centimeters,
 W the weight in kilograms and
 C the constant, 71.84.
 
-TODO: Revisar as unidades
-TODO: Revisar essa constante
+<!-- TODO: Revisar as unidades
+TODO: Revisar essa constante -->
+
 https://www.msdmanuals.com/medical-calculators/BodySurfaceArea-pt.htm
 
 DuBois D, DuBois E.F. "A formula to estimate the approximate surface area if height and weight be known." Arch. Intern. Med. 17:862, 1916
@@ -26,11 +27,141 @@ https://scihubtw.tw/10.1001/archinte.1916.00080130010002
 
 https://medicalsuite.einstein.br/Servicos/Paginas/calculadora-bodySurfaceArea.aspx
 
-TODO: Achar o artigo
+<!-- TODO: Achar o artigo
 
 TODO: Comparar as técnicas
+TODO: fórmula clearance creatinina CKD-EPI
+-->
 
 ## Protocols
+
+### TalCyDex
+
+1. Nome: Talcydex (Talidomida, Ciclofosfamida, Dexametasona)
+
+2. Indicações: Mieloma múltiplo
+
+3. Regime
+
+   | Ordem infusão | Medicamento / dose / velocidade infusão                                 | D1  | D8  | D15 | D22 |
+   | :-----------: | ----------------------------------------------------------------------- | :-: | :-: | :-: | :-: |
+   |       1       | Dexametasona 40 mg/dia VO pela manhã                                    |  Х  |  X  |  X  |  X  |
+   |       2       | Ciclofosfamida 300 mg/m<sup>2</sup>/dia VO durante ou após as refeições |  X  |  X  |  X  |  X  |
+   |       3       | Talidomida 100 - 200 mg/dia VO à noite                                  |  X  |  X  |  X  |  X  |
+
+4. Freqüência: a cada 28 dias, 9 ciclos
+5. Pré-medicação: não é necessário
+6. Potencial emetogêncio: BAIXO a MODERADO
+7. Medicamentos de suporte:
+
+   - aciclovir 200 mg 8/8 h, profilático
+   - sulfametoxazol 800 mg - Trimetoprim 160 mg, 1 x/dia, profilático
+   - AAS 100 mg, 1 x/dia
+
+8. Ajuste de dose
+
+   <!--
+
+
+   ***
+
+   **a. Função renal**
+
+   | Clearance creatinina (mL/min) | Ciclofosfamida |
+   | :---------------------------: | :------------: |
+   |            30 - 50            |      100%      |
+
+    |           10 - 30            |    50 - 75%     |
+   |             < 10              | 50 % ou omissão |
+
+   ***
+
+   **b. Função hepática**
+
+   | Bilirrubinas                             | Vincristina | Ciclofosfamida |
+   | ---------------------------------------- | ----------- | -------------- |
+   | Aumento de 1-2 vezes limite superior     | 50%         | 100%           |
+   | Aumento de 2-4 vezes limite superior     | 25%         | Atenção        |
+   | Aumento maior de 4 vezes limite superior | omitir      | Atenção        |
+
+   ***
+
+   **c. Toxicidade hematológica e não-hematológica:**
+
+   | Toxicidade                                                                    | Vincristina                                                     | Ciclofosfamida                      |
+   | ----------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------- |
+   | Toxicidade hematológica grau 4 >= 7 dias,</br>neutropenia febril, sangramento | 100%                                                            | 75% ou filgrastima (em neutropenia) |
+   | Toxicidade não hematológica grau 3                                            | 100%                                                            | 75%                                 |
+   | Toxicidade orgânica grau 4                                                    | descontinuar                                                    | descontinuar                        |
+   | Neurotoxicidade                                                               | **Leve**: 67%</br>**Moderada**: Aguardar recuperação, reiniciar | 100%                                | -->
+
+   <!-- TODO: Falta o resto do ajuste de dose -->
+
+### ABVD
+
+1. Nome: ABVD (Adriamicina (doxorrubicina), Bleomicina, Vimblastina, Dacarbazina)
+
+2. Indicações: Primeira linha de tratamento para Linfoma de Hodgkin
+
+3. Regime
+
+   | Ordem infusão | Medicamento / dose / velocidade infusão                                                            | D1  | D15 |
+   | :-----------: | -------------------------------------------------------------------------------------------------- | :-: | :-: |
+   |       1       | Doxorrubicina 25 mg/m<sup>2</sup> (reconstituir em 25 ml AD ou SF) EV lento em bolus               |  Х  |  X  |
+   |       2       | Bleomicina\* 10 u/m<sup>2</sup> (reconstituir 5 ml SF) EV lento em bolus (mínimo 10 min)           |  X  |  X  |
+   |       3       | Vimblastina 6 mg/m<sup>2</sup> EV lento em bolus (5 a 15 min)                                      |  X  |  X  |
+   |       4       | Dacarbazina 375 mg/m<sup>2</sup> (reconstituir em 20 ml SF e diluir em 500 ml SF) EV infusão em 3h |  X  |  X  |
+
+4. Freqüência: a cada 28 dias, 6 a 8 ciclos
+5. Pré-medicação:
+
+   - ondansetrona 8 mg EV - 30 min
+
+6. Potencial emetogêncio: MODERADO a ALTO (dacarbazina)
+7. Medicamentos de suporte:
+
+   - alopurinol, 300 mg/dia (prevenção delise tumoral)
+   - omeprazol, 20 mg/dia
+   - ondansetrona 8 mg sol inj EV 8/8h
+
+8. Ajuste de dose
+
+   <!--
+
+
+   ***
+
+   **a. Função renal**
+
+   | Clearance creatinina (mL/min) | Ciclofosfamida |
+   | :---------------------------: | :------------: |
+   |            30 - 50            |      100%      |
+
+    |           10 - 30            |    50 - 75%     |
+   |             < 10              | 50 % ou omissão |
+
+   ***
+
+   **b. Função hepática**
+
+   | Bilirrubinas                             | Vincristina | Ciclofosfamida |
+   | ---------------------------------------- | ----------- | -------------- |
+   | Aumento de 1-2 vezes limite superior     | 50%         | 100%           |
+   | Aumento de 2-4 vezes limite superior     | 25%         | Atenção        |
+   | Aumento maior de 4 vezes limite superior | omitir      | Atenção        |
+
+   ***
+
+   **c. Toxicidade hematológica e não-hematológica:**
+
+   | Toxicidade                                                                    | Vincristina                                                     | Ciclofosfamida                      |
+   | ----------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------- |
+   | Toxicidade hematológica grau 4 >= 7 dias,</br>neutropenia febril, sangramento | 100%                                                            | 75% ou filgrastima (em neutropenia) |
+   | Toxicidade não hematológica grau 3                                            | 100%                                                            | 75%                                 |
+   | Toxicidade orgânica grau 4                                                    | descontinuar                                                    | descontinuar                        |
+   | Neurotoxicidade                                                               | **Leve**: 67%</br>**Moderada**: Aguardar recuperação, reiniciar | 100%                                | -->
+
+   <!-- TODO: Falta o resto do ajuste de dose -->
 
 ### CVP
 
@@ -84,6 +215,59 @@ TODO: Comparar as técnicas
     | Toxicidade não hematológica grau 3                                            | 100%                                                            | 75%                                 |
     | Toxicidade orgânica grau 4                                                    | descontinuar                                                    | descontinuar                        |
     | Neurotoxicidade                                                               | **Leve**: 67%</br>**Moderada**: Aguardar recuperação, reiniciar | 100%                                |
+
+### CyBorD
+
+1.  Nome - CyBorD (Ciclofosfamida, Bortezomib, Dexametasona)
+2.  Indicações principais: Mieloma múltiplo e amiloidose
+3.  Regime
+
+    | Ordem infusão | Medicamento / dose / velocidade infusão                              | D1  | D8  | D15 | D22 |
+    | :-----------: | -------------------------------------------------------------------- | :-: | :-: | :-: | :-: |
+    |       1       | Bortezomib 1,3 mg/m<sup>2</sup> SC (diluir cada 3,5 mg em 3,5 ml SF) |  Х  |  X  |  X  |  X  |
+    |       2       | Ciclofosfamida 300 mg/m<sup>2</sup>/dia VO                           |  X  |  X  |  X  |  X  |
+    |       3       | Dexametasona 40 mg/dia VO                                            |  X  |  X  |  X  |  X  |
+
+4.  Freqüência: a cada 28 dias
+5.  Pré-medicação: não é necessário
+6.  Potencial emetogêncio: BAIXO a MODERADO
+7.  Medicamentos de suporte:
+    - aciclovir 200 mg 8/8 h profilático
+8.  Ajuste de dose
+
+    ***
+
+    **a. Função renal**
+
+    | Clearance creatinina (mL/min) | Ciclofosfamida |
+    | :---------------------------: | :------------: |
+    |            30 - 50            |      100%      |
+
+    <!-- |            10 - 30            |    50 - 75%     |
+    |             < 10              | 50 % ou omissão | -->
+
+    ***
+
+    <!-- **b. Função hepática**
+
+    | Bilirrubinas                             | Vincristina | Ciclofosfamida |
+    | ---------------------------------------- | ----------- | -------------- |
+    | Aumento de 1-2 vezes limite superior     | 50%         | 100%           |
+    | Aumento de 2-4 vezes limite superior     | 25%         | Atenção        |
+    | Aumento maior de 4 vezes limite superior | omitir      | Atenção        |
+
+    ***
+
+    **c. Toxicidade hematológica e não-hematológica:**
+
+    | Toxicidade                                                                    | Vincristina                                                     | Ciclofosfamida                      |
+    | ----------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------- |
+    | Toxicidade hematológica grau 4 >= 7 dias,</br>neutropenia febril, sangramento | 100%                                                            | 75% ou filgrastima (em neutropenia) |
+    | Toxicidade não hematológica grau 3                                            | 100%                                                            | 75%                                 |
+    | Toxicidade orgânica grau 4                                                    | descontinuar                                                    | descontinuar                        |
+    | Neurotoxicidade                                                               | **Leve**: 67%</br>**Moderada**: Aguardar recuperação, reiniciar | 100%                                | -->
+
+    <!-- TODO: Falta o resto do ajuste de dose -->
 
 <!-- # Getting Started with Create React App
 
