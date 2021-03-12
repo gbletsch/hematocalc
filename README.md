@@ -43,11 +43,11 @@ TODO: fórmula clearance creatinina CKD-EPI
 
 3. Regime
 
-   | Ordem infusão | Medicamento / dose / velocidade infusão                                 | D1  | D8  | D15 | D22 |
-   | :-----------: | ----------------------------------------------------------------------- | :-: | :-: | :-: | :-: |
-   |       1       | Dexametasona 40 mg/dia VO pela manhã                                    |  Х  |  X  |  X  |  X  |
-   |       2       | Ciclofosfamida 300 mg/m<sup>2</sup>/dia VO durante ou após as refeições |  X  |  X  |  X  |  X  |
-   |       3       | Talidomida 100 - 200 mg/dia VO à noite                                  |  X  |  X  |  X  |  X  |
+   | Ordem infusão | Medicamento / dose / velocidade infusão                                 | D1  | D8  |   D15    | D22 |
+   | :-----------: | ----------------------------------------------------------------------- | :-: | :-: | :------: | :-: |
+   |       1       | Dexametasona 40 mg/dia VO pela manhã                                    |  Х  |  X  |    X     |  X  |
+   |       2       | Ciclofosfamida 300 mg/m<sup>2</sup>/dia VO durante ou após as refeições |  X  |  X  |    X     |  X  |
+   |       3       | Talidomida 100 - 200 mg/dia VO à noite                                  |     |     | D1 a D28 |     |
 
 4. Freqüência: a cada 28 dias, 9 ciclos
 5. Pré-medicação: não é necessário

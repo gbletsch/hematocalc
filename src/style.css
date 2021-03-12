@@ -45,7 +45,8 @@
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
-.cvp__container {
+.cvp__container,
+.talc__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,15 +54,19 @@
   width: 100%;
 }
 
-.cvp__table {
+.cvp__table,
+.talc__table {
   width: 98%;
 }
 
 .cvp__table,
 .cvp__th,
-.cvp__td {
+.cvp__td,
+.talc__table,
+.talc__th,
+.talc__td {
   border: 1px solid black;
   border-collapse: collapse;
-  padding: 1px;
+  padding: 2px;
   text-align: center;
 }

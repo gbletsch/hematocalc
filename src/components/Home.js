@@ -4,11 +4,13 @@ import {
   calculateBSAMosteller,
 } from "../utils/bsa-formulae";
 import CVP from "./CVP";
+import TalCyDex from "./TalCyDex";
 
 function Home() {
   const DUBOIS = "dubois";
   const MOSTELLER = "mosteller";
   const CVP_protocol = "CVP";
+  const TALCYDEX = "TalCyDex";
 
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
@@ -121,7 +123,13 @@ function Home() {
       <p className="home__p">
         Superfície corporal considerada: {bsa.toFixed(3)} m<sup>2</sup>
       </p>
-      {protocol === CVP_protocol ? <CVP bsa={bsa} /> : ""}
+      {protocol === CVP_protocol ? (
+        <CVP bsa={bsa} />
+      ) : protocol === TALCYDEX ? (
+        <TalCyDex bsa={bsa} />
+      ) : (
+        ""
+      )}
 
       {/* <CVP bsa={bsa} /> */}
     </div>
