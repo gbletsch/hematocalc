@@ -170,7 +170,7 @@ function CVP({ bsa }) {
               <tbody>
                 <tr>
                   <td>
-                    Toxicidade hematológica grau 4 >= 7 dias, neutropenia
+                    Toxicidade hematológica grau 4 &gt;= 7 dias, neutropenia
                     febril, sangramento
                   </td>
                   <td>100%</td>
