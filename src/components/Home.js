@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { calculateBSADubois } from "../utils/bsa-formulae";
 import ABVD from "./ABVD";
-import CVP from "./CVP";
+import CVPProtocol from "./CVP/CVPProtocol";
+import CVPRegimen from "./CVP/CVPRegimen";
 import CyBorD from "./CyBorD";
 import Tab from "./Tab";
 import Tabs from "./Tabs";
@@ -181,8 +182,17 @@ function Home() {
           </option>
         </select>
       </form>
+
       {protocol === CVP_const ? (
-        <CVP bsa={calculateBSADubois(height, weight)} />
+        <Tabs>
+          <Tab title="Prescrição">
+            <CVPRegimen bsa={calculateBSADubois(height, weight)} />
+          </Tab>
+          <Tab title="Protocol">
+            <CVPProtocol />
+          </Tab>
+          {/* <CVP bsa={calculateBSADubois(height, weight)} /> */}
+        </Tabs>
       ) : protocol === TALCYDEX ? (
         <TalCyDex bsa={calculateBSADubois(height, weight)} />
       ) : protocol === ABVD_const ? (
