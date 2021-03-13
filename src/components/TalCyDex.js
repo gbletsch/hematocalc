@@ -43,9 +43,8 @@ function TalCyDex({ bsa }) {
               <tr className="talc__tr">
                 <td className="talc__td">2</td>
                 <td className="talc__td">
-                  Ciclofosfamida {calculateCiclofosfamideDose()} mg/m
-                  <sup>2</sup>
-                  /dia VO durante ou após as refeições
+                  Ciclofosfamida {calculateCiclofosfamideDose()} mg/dia VO
+                  durante ou após as refeições
                 </td>
                 <td className="talc__td">X</td>
                 <td className="talc__td">X</td>
