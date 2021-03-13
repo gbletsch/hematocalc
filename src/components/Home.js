@@ -6,7 +6,8 @@ import CVPRegimen from "./CVP/CVPRegimen";
 import CyBorD from "./CyBorD";
 import Tab from "./Tab";
 import Tabs from "./Tabs";
-import TalCyDex from "./TalCyDex";
+import TalCProtocol from "./TalCyDex/TalCProtocol";
+import TalCRegimen from "./TalCyDex/TalCRegimen";
 
 function Home() {
   const WEIGHT = "weight";
@@ -191,10 +192,17 @@ function Home() {
           <Tab title="Protocol">
             <CVPProtocol />
           </Tab>
-          {/* <CVP bsa={calculateBSADubois(height, weight)} /> */}
         </Tabs>
       ) : protocol === TALCYDEX ? (
-        <TalCyDex bsa={calculateBSADubois(height, weight)} />
+        <Tabs>
+          <Tab title="Prescrição">
+            <TalCRegimen bsa={calculateBSADubois(height, weight)} />
+          </Tab>
+          <Tab title="Protocol">
+            <TalCProtocol />
+          </Tab>
+          {/* <TalCyDex bsa={calculateBSADubois(height, weight)} /> */}
+        </Tabs>
       ) : protocol === ABVD_const ? (
         <ABVD bsa={calculateBSADubois(height, weight)} />
       ) : protocol === CYBORD ? (
