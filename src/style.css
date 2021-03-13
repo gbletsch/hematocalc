@@ -67,7 +67,8 @@ select {
 }
 
 .cvp__container,
-.talc__container {
+.talc__container,
+.cybord__container {
   display: flex;
   flex-direction: column;
   align-items: center;

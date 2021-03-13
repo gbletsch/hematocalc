@@ -5,6 +5,7 @@ import {
 } from "../utils/bsa-formulae";
 import ABVD from "./ABVD";
 import CVP from "./CVP";
+import CyBorD from "./CyBorD";
 import TalCyDex from "./TalCyDex";
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
   const CVP_const = "CVP";
   const TALCYDEX = "TalCyDex";
   const ABVD_const = "ABVD";
+  const CYBORD = "CyBorD";
 
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
@@ -38,21 +40,6 @@ function Home() {
     if (tempBsa > 2) tempBsa = 2;
     setBsa(tempBsa);
   };
-
-  // const handleProtocolOptions = (e) => {
-  //   const option = e.target.value;
-  //   let tempProtocol = "";
-
-  //   switch (option) {
-  //     case CVP_const:
-  //       tempProtocol = "<CVP bsa={bsa} />";
-  //       break;
-  //     default:
-  //       break;
-  //   }
-
-  //   setProtocol(tempProtocol);
-  // };
 
   return (
     <div className="home__container">
@@ -131,6 +118,8 @@ function Home() {
         <TalCyDex bsa={bsa} />
       ) : protocol === ABVD_const ? (
         <ABVD bsa={bsa} />
+      ) : protocol === CYBORD ? (
+        <CyBorD bsa={bsa} />
       ) : (
         ""
       )}
