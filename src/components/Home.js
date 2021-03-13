@@ -3,14 +3,16 @@ import {
   calculateBSADubois,
   calculateBSAMosteller,
 } from "../utils/bsa-formulae";
+import ABVD from "./ABVD";
 import CVP from "./CVP";
 import TalCyDex from "./TalCyDex";
 
 function Home() {
   const DUBOIS = "dubois";
   const MOSTELLER = "mosteller";
-  const CVP_protocol = "CVP";
+  const CVP_const = "CVP";
   const TALCYDEX = "TalCyDex";
+  const ABVD_const = "ABVD";
 
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
@@ -42,7 +44,7 @@ function Home() {
   //   let tempProtocol = "";
 
   //   switch (option) {
-  //     case CVP_protocol:
+  //     case CVP_const:
   //       tempProtocol = "<CVP bsa={bsa} />";
   //       break;
   //     default:
@@ -54,7 +56,7 @@ function Home() {
 
   return (
     <div className="home__container">
-      <h2 className="home__h2">Adicionar dados do paciente:</h2>
+      <h2>Adicionar dados do paciente:</h2>
       <form className="home__basic__form">
         <div className="home__form-item">
           <label htmlFor="weight" className="home__label">
@@ -112,7 +114,7 @@ function Home() {
           <option value="TalCyDex" className="home__option">
             TalCyDex
           </option>
-          <option value="ABVD" className="home__option">
+          <option value={ABVD_const} className="home__option">
             ABVD
           </option>
           <option value="CyBorD" className="home__option">
@@ -123,10 +125,12 @@ function Home() {
       <p className="home__p">
         Superfície corporal considerada: {bsa.toFixed(3)} m<sup>2</sup>
       </p>
-      {protocol === CVP_protocol ? (
+      {protocol === CVP_const ? (
         <CVP bsa={bsa} />
       ) : protocol === TALCYDEX ? (
         <TalCyDex bsa={bsa} />
+      ) : protocol === ABVD_const ? (
+        <ABVD bsa={bsa} />
       ) : (
         ""
       )}
