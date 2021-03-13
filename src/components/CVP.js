@@ -20,7 +20,7 @@ function CVP({ bsa }) {
   return (
     <div className="cvp__container">
       <h1 className="cvp__h1">CVP</h1>
-
+      <p>BSA: {bsa}</p>
       <ol>
         <li>
           <strong>Nome:</strong> CVP (Ciclofosfamida, Vincristina, Prednisona)

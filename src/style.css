@@ -9,6 +9,10 @@ li {
   margin-top: 2px;
 }
 
+button {
+  padding: 10px;
+}
+
 ol li ol {
   list-style-type: lower-alpha;
 }
@@ -51,10 +55,13 @@ ol li {
   width: 100%;
 }
 
+/* TODO: os forms / containeres estão tortos */
+
 .home__form-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 5px;
 }
 
@@ -100,4 +107,8 @@ td {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.input-row {
+  display: flex;
 }
