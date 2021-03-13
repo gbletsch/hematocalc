@@ -48,6 +48,7 @@ ol li {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  width: 100%;
 }
 
 .home__form-item {
@@ -57,7 +58,7 @@ ol li {
   padding: 5px;
 }
 
-select {
+.home__select {
   width: 100%;
   margin-top: 5px;
   padding: 10px;
@@ -73,7 +74,8 @@ select {
 
 .cvp__container,
 .talc__container,
-.cybord__container {
+.cybord__container,
+.tabs__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,4 +94,10 @@ td {
   border-collapse: collapse;
   padding: 2px;
   text-align: center;
+}
+
+.tabs__ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }

@@ -6,6 +6,8 @@ import {
 import ABVD from "./ABVD";
 import CVP from "./CVP";
 import CyBorD from "./CyBorD";
+import Tab from "./Tab";
+import Tabs from "./Tabs";
 import TalCyDex from "./TalCyDex";
 
 function Home() {
@@ -43,32 +45,40 @@ function Home() {
 
   return (
     <div className="home__container">
+      <Tabs>
+        <Tab title="Peso e Altura">
+          <form className="home__basic__form">
+            <div className="home__form-item">
+              <label htmlFor="weight" className="home__label">
+                Peso (kg):
+              </label>
+              <input
+                type="number"
+                className="home__input"
+                name="weight"
+                id="weight"
+                onChange={(e) => setWeight(e.target.value)}
+              />
+            </div>
+            <div className="home__form-item">
+              <label htmlFor="weight" className="home__label">
+                Altura (cm):
+              </label>
+              <input
+                type="number"
+                className="home__input"
+                name="height"
+                id="height"
+                onChange={(e) => setHeight(e.target.value)}
+              />
+            </div>
+          </form>
+        </Tab>
+        <Tab title="Strawberry">Strawberry is red</Tab>
+        <Tab title="Pear">Pear is green</Tab>
+      </Tabs>
       <h2>Adicionar dados do paciente:</h2>
       <form className="home__basic__form">
-        <div className="home__form-item">
-          <label htmlFor="weight" className="home__label">
-            Peso (kg):
-          </label>
-          <input
-            type="number"
-            className="home__input"
-            name="weight"
-            id="weight"
-            onChange={(e) => setWeight(e.target.value)}
-          />
-        </div>
-        <div className="home__form-item">
-          <label htmlFor="weight" className="home__label">
-            Altura (cm):
-          </label>
-          <input
-            type="number"
-            className="home__input"
-            name="height"
-            id="height"
-            onChange={(e) => setHeight(e.target.value)}
-          />
-        </div>
         <select
           onChange={handleBSAOptions}
           name="bsa-options"
