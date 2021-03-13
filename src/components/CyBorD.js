@@ -1,6 +1,14 @@
 import React from "react";
 
 function CyBorD({ bsa }) {
+  const calculateBortezomib = () => {
+    return `${(1.3 * bsa).toFixed(2)}`;
+  };
+
+  const calculateCiclofosfamide = () => {
+    return `${300 * bsa}`;
+  };
+
   return (
     <div className="cybord__container">
       <h1>CyBorD</h1>
@@ -30,7 +38,8 @@ function CyBorD({ bsa }) {
               <tr>
                 <td>1</td>
                 <td>
-                  Bortezomib 1,3 mg/m2 SC (diluir cada 3,5 mg em 3,5 ml SF)
+                  Bortezomib {calculateBortezomib()} mg SC (diluir cada 3,5 mg
+                  em 3,5 ml SF)
                 </td>
                 <td>X</td>
                 <td>X</td>
@@ -39,7 +48,7 @@ function CyBorD({ bsa }) {
               </tr>
               <tr>
                 <td>2</td>
-                <td>Ciclofosfamida 300 mg/m2/dia VO</td>
+                <td>Ciclofosfamida {calculateCiclofosfamide()} mg/dia VO</td>
                 <td>X</td>
                 <td>X</td>
                 <td>X</td>

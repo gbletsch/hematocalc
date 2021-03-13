@@ -50,7 +50,7 @@ function Home() {
             Peso (kg):
           </label>
           <input
-            type="text"
+            type="number"
             className="home__input"
             name="weight"
             id="weight"
@@ -62,7 +62,7 @@ function Home() {
             Altura (cm):
           </label>
           <input
-            type="text"
+            type="number"
             className="home__input"
             name="height"
             id="height"
