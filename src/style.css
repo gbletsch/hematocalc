@@ -24,11 +24,16 @@ ol li {
 
 .app__container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 400px;
   margin: auto;
   padding: 2px;
+}
+
+.header__container {
+  margin-bottom: 10px;
 }
 
 .home__container {
