@@ -4,7 +4,8 @@ import ABVDProtocol from "./ABVD/ABVDProtocol";
 import ABVDRegimen from "./ABVD/ABVDRegimen";
 import CVPProtocol from "./CVP/CVPProtocol";
 import CVPRegimen from "./CVP/CVPRegimen";
-import CyBorD from "./CyBorD";
+import CyBorDProtocol from "./CyBorD/CyBorDProtocol";
+import CyBorDRegimen from "./CyBorD/CyBorDRegimen";
 import Tab from "./Tab";
 import Tabs from "./Tabs";
 import TalCProtocol from "./TalCyDex/TalCProtocol";
@@ -211,10 +212,18 @@ function Home() {
           <Tab title="Protocol">
             <ABVDProtocol />
           </Tab>
-          {/* <ABVD bsa={calculateBSADubois(height, weight)} /> */}
         </Tabs>
       ) : protocol === CYBORD ? (
-        <CyBorD bsa={calculateBSADubois(height, weight)} />
+        <Tabs>
+          <Tab title="Prescrição">
+            <CyBorDRegimen bsa={calculateBSADubois(height, weight)} />
+          </Tab>
+          <Tab title="Protocolo">
+            <CyBorDProtocol />
+          </Tab>
+
+          {/* <CyBorD bsa={calculateBSADubois(height, weight)} /> */}
+        </Tabs>
       ) : (
         ""
       )}

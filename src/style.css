@@ -13,8 +13,12 @@ button {
   padding: 10px;
 }
 
+table {
+  max-width: 100%;
+}
+
 th {
-  min-width: 2.5rem;
+  min-width: 2.3rem;
 }
 
 ol li ol {
