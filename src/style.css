@@ -14,7 +14,17 @@ button {
 }
 
 table {
-  max-width: 100%;
+  width: 90%;
+  /* background-color: tomato; */
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: center;
 }
 
 th {
@@ -105,19 +115,6 @@ ol li {
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-
-table {
-  width: 97%;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 2px;
-  text-align: center;
 }
 
 .tabs__ul {

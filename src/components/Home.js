@@ -33,9 +33,10 @@ function Home() {
   const [race, setRace] = useState("");
   const [sex, setSex] = useState("");
 
-  const calculateGFR = (creat, race, sex, age) => {
+  const calculateGFR = () => {
     // Levey AS, Stevens LA, Schmid CH, Zhang YL, Castro AF, 3rd, Feldman HI, et al. A new equation to estimate glomerular filtration rate. Ann Intern Med. 2009;150(9):604-12
     // GFR = 141 × min(Scr/κ, 1)α × max(Scr/κ, 1)-1.209 × 0.993Age × 1.018 [if female] × 1.159 [if African American]
+
     const k = sex === MALE ? 0.9 : 0.7;
     const alpha = sex === MALE ? -0.411 : -0.329;
 
@@ -157,7 +158,9 @@ function Home() {
               </select>
             </div>
           </form>
-          <p>TFG: {calculateGFR(creat, race, sex, age)}</p>
+          <p>
+            TFG: {calculateGFR()} {creat}
+          </p>
         </Tab>
       </Tabs>
 
@@ -189,9 +192,12 @@ function Home() {
       {protocol === CVP_const ? (
         <Tabs>
           <Tab title="Prescrição">
-            <CVPRegimen bsa={calculateBSADubois(height, weight)} />
+            <CVPRegimen
+              bsa={calculateBSADubois(height, weight)}
+              gfr={calculateGFR(creat, race, sex, age)}
+            />
           </Tab>
-          <Tab title="Protocol">
+          <Tab title="Protocolo">
             <CVPProtocol />
           </Tab>
         </Tabs>
@@ -200,7 +206,7 @@ function Home() {
           <Tab title="Prescrição">
             <TalCRegimen bsa={calculateBSADubois(height, weight)} />
           </Tab>
-          <Tab title="Protocol">
+          <Tab title="Protocolo">
             <TalCProtocol />
           </Tab>
         </Tabs>
@@ -209,7 +215,7 @@ function Home() {
           <Tab title="Prescrição">
             <ABVDRegimen bsa={calculateBSADubois(height, weight)} />
           </Tab>
-          <Tab title="Protocol">
+          <Tab title="Protocolo">
             <ABVDProtocol />
           </Tab>
         </Tabs>
@@ -221,8 +227,6 @@ function Home() {
           <Tab title="Protocolo">
             <CyBorDProtocol />
           </Tab>
-
-          {/* <CyBorD bsa={calculateBSADubois(height, weight)} /> */}
         </Tabs>
       ) : (
         ""
