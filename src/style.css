@@ -13,6 +13,10 @@ button {
   padding: 10px;
 }
 
+th {
+  min-width: 2.5rem;
+}
+
 ol li ol {
   list-style-type: lower-alpha;
 }

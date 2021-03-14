@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { calculateBSADubois } from "../utils/bsa-formulae";
-import ABVD from "./ABVD";
+import ABVDProtocol from "./ABVD/ABVDProtocol";
+import ABVDRegimen from "./ABVD/ABVDRegimen";
 import CVPProtocol from "./CVP/CVPProtocol";
 import CVPRegimen from "./CVP/CVPRegimen";
 import CyBorD from "./CyBorD";
@@ -201,10 +202,17 @@ function Home() {
           <Tab title="Protocol">
             <TalCProtocol />
           </Tab>
-          {/* <TalCyDex bsa={calculateBSADubois(height, weight)} /> */}
         </Tabs>
       ) : protocol === ABVD_const ? (
-        <ABVD bsa={calculateBSADubois(height, weight)} />
+        <Tabs>
+          <Tab title="Prescrição">
+            <ABVDRegimen bsa={calculateBSADubois(height, weight)} />
+          </Tab>
+          <Tab title="Protocol">
+            <ABVDProtocol />
+          </Tab>
+          {/* <ABVD bsa={calculateBSADubois(height, weight)} /> */}
+        </Tabs>
       ) : protocol === CYBORD ? (
         <CyBorD bsa={calculateBSADubois(height, weight)} />
       ) : (
